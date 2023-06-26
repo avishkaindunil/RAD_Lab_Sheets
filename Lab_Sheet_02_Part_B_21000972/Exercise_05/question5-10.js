@@ -6,11 +6,9 @@ for (let i = 1; i <= 30; i++) {
     }
 };
 
-
 //Question 06
 document.write("<br><br><b>Question 06 </b><br><br>");
 const array = ["apple", "banana", "orange", "grape"];
-
 for (let i = 0; i < array.length; i++) {
   document.write(array[i], "<br>");
 }
@@ -30,7 +28,6 @@ const length = numbers.length;
 numbers.sort();
 document.write(numbers,"<br>");   //New array
 document.write(length, "<br>");    //Length of the array
-
 
 //Question 08
 document.write("<br><br><b>Question 08 </b><br><br>");
@@ -60,7 +57,6 @@ document.write(myGirls, "<br>", myBoys, "<br>");
 const mergedArray = myGirls.concat(myBoys);
 
 document.write(mergedArray);  //Merged array
-
 
 //Question 10
 document.write("<br><br><b>Question 10 </b><br><br>");
