@@ -1,5 +1,5 @@
 //Question 01
-document.write("<b>Question 01 </b><br><br>");
+document.write("<b>Question 01</b><br><br>");
 const currentTime = new Date();
 const currentHour = currentTime.getHours();
 
