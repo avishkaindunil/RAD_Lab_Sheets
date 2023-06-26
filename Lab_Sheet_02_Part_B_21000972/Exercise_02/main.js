@@ -5,14 +5,14 @@ let total, average;
 
 total = Mark1 + Mark2 + Mark3;
 average = total/3;
-document.write(total,"<br>" ,average, "<br>");
+document.write(total,"<br>" ,average,"<br>");
 
 //Question 02
 document.write("<br><b>Question 02</b><br><br>");
 const name = "Avishka Indunil";
 var age    = 23;
 const gender = "Male";
-document.write(name, "<br>", age, "<br>", gender, "<br>" )
+document.write(name, "<br>", age, "<br>", gender,"<br>" )
 
 //Question 03
 document.write("<br><b>Question 03</b><br><br>");
@@ -21,7 +21,7 @@ function areaOfRectangle(length, width){
 }
 
 let area = areaOfRectangle(20, 50);
-document.write("Area of Rectangle is(length=20, width=50): " ,area, " Square Units<br><br>");
+document.write("Area of Rectangle is(length=20, width=50): ", area, " Square Units<br><br>");
 
 //Question 04
 document.write("<b>Question 04</b><br><br>");
