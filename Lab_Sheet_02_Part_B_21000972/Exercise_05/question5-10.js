@@ -55,7 +55,6 @@ document.write(myGirls, "<br>", myBoys, "<br>");
 
 //Merge the two arrays
 const mergedArray = myGirls.concat(myBoys);
-
 document.write(mergedArray);  //Merged array
 
 //Question 10
@@ -67,5 +66,4 @@ let sum = 0;
 for (let i = 0; i < numbersArray.length; i++) {
   sum += numbersArray[i];
 }
-
 document.write("The sum of all numbers is: " + sum);
