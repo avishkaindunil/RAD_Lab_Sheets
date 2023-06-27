@@ -1,6 +1,5 @@
 //Question 01
 document.write("<b>Question 01 </b><br><br>");
-
 const mammal = {
     color: "orange",
     type : "cat",
@@ -8,9 +7,7 @@ const mammal = {
     name : "kitty",
     speed: 24
 }
-
 document.write("Type : " ,mammal.type, "<br> ", "Name : ", mammal.name);
-
 
 //Question 02
 document.write("<br><br><b>Question 02 </b><br><br>");
@@ -22,7 +19,6 @@ const person = {
         return this.firstName + " " + this.lastName;
     }
 };
-
 document.write(person.fullName());
 
 //Question 03
