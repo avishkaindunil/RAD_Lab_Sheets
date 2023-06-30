@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_One</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        const games = ["The Last of Us", "Uncharted", "God of War", "Bloodborne"];
+        const gameToFind = "God of War";
+
+        const gameIndex = games.indexOf(gameToFind);
+
+        const resultElement = document.getElementById("result");
+        resultElement.textContent = "Index of " + gameToFind + ": " + gameIndex;
+    </script>
+</body>
+</html>

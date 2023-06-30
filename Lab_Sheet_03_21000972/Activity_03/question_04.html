@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_Four</title>
+</head>
+<body>
+    <p id="valueResult"></p>
+    <p id="sizeResult"></p>
+
+    <script>
+        const fruitsMap = new Map();
+
+        fruitsMap.set('apple', 5);
+        fruitsMap.set('banana', 3);
+        fruitsMap.set('orange', 2);
+
+        const bananaValue = fruitsMap.get('banana');
+
+        const size = fruitsMap.size;
+
+        const valueResultElement = document.getElementById("valueResult");
+        valueResultElement.textContent = `Value of "banana": ${bananaValue}`;
+
+        const sizeResultElement = document.getElementById("sizeResult");
+        sizeResultElement.textContent = `Size of Map: ${size}`;
+    </script>
+</body>
+</html>

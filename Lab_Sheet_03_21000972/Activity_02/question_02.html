@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question_Two</title>
+</head>
+<body>
+    <fieldset>
+        <h1>Natural Number Finder</h1>
+        <label>Enter a number:</label>
+        <input type="number" id="inputnumber">
+        <button onclick="checkNaturalNumber()">Check</button>
+        <p id="result"></p>
+    </fieldset>
+    <script>
+        function checkNaturalNumber() {
+            var inputNumber = parseInt(document.getElementById("inputnumber").value);
+
+            var resultElement = document.getElementById("result");
+
+            if (Number.isInteger(inputNumber) && inputNumber > 0) {
+                resultElement.textContent = "The number is a natural number.";
+            } else {
+                resultElement.textContent = "The number is not a natural number.";
+            }
+        }
+    </script>
+</body>
+</html>

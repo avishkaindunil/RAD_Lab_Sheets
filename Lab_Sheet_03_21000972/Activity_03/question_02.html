@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_Two</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        function createMap(keyValuePairs) {
+            return new Map(keyValuePairs);
+        }
+
+        const keyValuePairs = [
+            ['Name', 'John'],
+            ['Age', 30],
+            ['City', 'Colombo']
+        ];
+
+        const resultMap = createMap(keyValuePairs);
+
+        const resultElement = document.getElementById("result");
+        resultElement.textContent = "Created Map: " + JSON.stringify([...resultMap]);
+    </script>
+</body>
+</html>

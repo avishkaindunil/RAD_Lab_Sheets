@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question_One</title>
+</head>
+<body>
+    <fieldset>
+        <h1>boolean value Finder</h1>
+        <label>Enter first boolean value: </label>
+        <input id="fvalue" type="text" name="valueone" placeholder="First Value"><br>
+        <label>Enter second boolean value: </label>
+        <input id="svalue" type="text" name="valuetwo" placeholder="Second Value"><br>
+        <button onclick="checkInputs()">Check Inputs</button>
+        <p id="result"></p>
+    </fieldset>
+
+    <script>
+        function checkInputs(){
+            var inputOne = document.getElementById("fvalue").value;
+            var inputTwo = document.getElementById("svalue").value;
+
+            var resultElement = document.getElementById("result");
+
+            if (inputOne.toLowerCase() === 'true' && inputTwo.toLowerCase() === 'true') {
+                resultElement.textContent = 'true';
+            } else {
+                resultElement.textContent = 'false';
+            } 
+        }
+    </script>
+</body>
+</html>

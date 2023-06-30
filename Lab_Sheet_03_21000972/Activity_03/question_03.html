@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_Three</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        function removeKeyValuePair(map, keyToRemove) {
+            map.delete(keyToRemove);
+            return map;
+        }
+
+        const originalMap = new Map([
+            ['Name', 'John'],
+            ['Age', 30],
+            ['City', 'Colombo']
+        ]);
+
+        const keyToRemove = 'Age';
+
+        const updatedMap = removeKeyValuePair(originalMap, keyToRemove);
+
+        const resultElement = document.getElementById("result");
+        resultElement.textContent = "Updated Map: " + JSON.stringify([...updatedMap]);
+    </script>
+</body>
+</html>
