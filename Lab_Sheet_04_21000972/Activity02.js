@@ -2,7 +2,7 @@ class Rectangle {
     constructor (height, width, name) {
         this.height = height;
         this.width  = width;
-        this.area = (height * width);
+        this.area = (height*width);
         this.name = name;
     }
 
